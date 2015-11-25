@@ -1,0 +1,169 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.48 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.49 secs
+ 
+--> Reading design: pipelined_regfile_2stage.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pipelined_regfile_2stage.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pipelined_regfile_2stage"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-csg225
+
+---- Source Options
+Top Module Name                    : pipelined_regfile_2stage
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\sign_extend.v" into library work
+Parsing module <sign_extend>.
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\regfile.v" into library work
+Parsing verilog file "define.v" included at line 2.
+Parsing module <regfile>.
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\PC.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <PC1>.
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\MEM_WBstage.v" into library work
+Parsing verilog file "define.v" included at line 2.
+Parsing module <MEM_WBstage>.
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\memory.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <memory>.
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\ID_EXEstage.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <ID_EXE_stage>.
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\EXE_MEM_stage.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <EXE_MEM_stage>.
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\data_mem.v" into library work
+Parsing verilog file "define.v" included at line 21.
+Parsing module <data_mem>.
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\control.v" into library work
+Parsing verilog file "define.v" included at line 3.
+Parsing module <control>.
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\alu.v" into library work
+Parsing verilog file "define.v" included at line 1.
+Parsing module <alu>.
+Analyzing Verilog file "D:\Study\3.1\CE3001\3001_project\CZ3001_project\pipelined_2_stage.v" into library work
+Parsing verilog file "define.v" included at line 4.
+Parsing module <pipelined_regfile_2stage>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <pipelined_regfile_2stage>.
+
+Elaborating module <PC1>.
+WARNING:HDLCompiler:91 - "D:\Study\3.1\CE3001\3001_project\CZ3001_project\pipelined_2_stage.v" Line 85: Signal <PCsrc> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Study\3.1\CE3001\3001_project\CZ3001_project\pipelined_2_stage.v" Line 86: Signal <PCOUT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Study\3.1\CE3001\3001_project\CZ3001_project\pipelined_2_stage.v" Line 88: Signal <PCOUT_ID_EXE> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <memory>.
+"D:\Study\3.1\CE3001\3001_project\CZ3001_project\memory.v" Line 47. $write Opening Fileid 0\n
+WARNING:HDLCompiler:816 - "D:\Study\3.1\CE3001\3001_project\CZ3001_project\memory.v" Line 49: System function call feof not supported
+WARNING:HDLCompiler:817 - "D:\Study\3.1\CE3001\3001_project\CZ3001_project\memory.v" Line 62: System task fclose ignored for synthesis
+
+Elaborating module <control>.
+
+Elaborating module <regfile>.
+
+Elaborating module <sign_extend>.
+
+Elaborating module <ID_EXE_stage>.
+
+Elaborating module <alu>.
+
+Elaborating module <EXE_MEM_stage>.
+
+Elaborating module <data_mem>.

@@ -1,0 +1,44 @@
+ISim log file
+Running: D:\Study\3.1\CE3001\3001_project\CZ3001_project\testbench_4stqg_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Study/3.1/CE3001/3001_project/CZ3001_project/testbench_4stqg_isim_beh.wdb 
+ISim P.49d (signature 0x7708f090)
+----------------------------------------------------------------------
+INFO:Security:65 - Your license for 'ISIM' is for trial use only.
+WARNING:Security:40 - Your license for 'ISIM' expires in 4 days.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Opening Fileid  0
+ISim P.49d (signature 0x7708f090)
+----------------------------------------------------------------------
+INFO:Security:65 - Your license for 'ISIM' is for trial use only.
+WARNING:Security:40 - Your license for 'ISIM' expires in 4 days.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Opening Fileid  0
+ISim P.49d (signature 0x7708f090)
+----------------------------------------------------------------------
+INFO:Security:65 - Your license for 'ISIM' is for trial use only.
+WARNING:Security:40 - Your license for 'ISIM' expires in 4 days.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Opening Fileid  0

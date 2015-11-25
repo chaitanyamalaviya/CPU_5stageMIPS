@@ -1,0 +1,39 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Study/3.1/CE3001/3001_project/CZ3001_project/testbench_4stqg_isim_beh.exe" -prj "D:/Study/3.1/CE3001/3001_project/CZ3001_project/testbench_4stqg_beh.prj" "work.testbench_4stqg" "work.glbl" 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/sign_extend.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/regfile.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/PC.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/MEM_WBstage.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/memory.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/ID_EXEstage.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/EXE_MEM_stage.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/data_mem.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/control.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/alu.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/pipelined_2_stage.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/3001_project/CZ3001_project/testbench_4stqg.v" into library work
+Analyzing Verilog file "D:/Study/3.1/CE3001/14.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module PC1
+Compiling module memory
+Compiling module control
+Compiling module regfile
+Compiling module sign_extend
+Compiling module ID_EXE_stage
+Compiling module alu
+Compiling module EXE_MEM_stage
+Compiling module data_mem
+Compiling module MEM_WBstage
+Compiling module pipelined_regfile_2stage
+Compiling module testbench_4stqg
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 13 Verilog Units
+Built simulation executable D:/Study/3.1/CE3001/3001_project/CZ3001_project/testbench_4stqg_isim_beh.exe
+Fuse Memory Usage: 29172 KB
+Fuse CPU Usage: 1543 ms
